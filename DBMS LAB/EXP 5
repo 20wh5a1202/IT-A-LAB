@@ -1,0 +1,24 @@
+create database mydatabase;
+use mydatabase;
+show tables;
+create table bus(bus_no varchar(10) primary key,source varchar(20),destination varchar(20));
+insert into bus values('ts01','hyderabad','viz');
+insert into bus values('ts02','hyderabad','ongoal');
+insert into bus values('ts03','hyderabad','basara');
+select * from bus;
+
+
+create table pasinger(pno int(20) primary key, pname varchar(20),address varchar(20),age real,amountpaid real);
+select * from pasinger;
+insert into pasinger values (120,'laxmi','bachupally',21,1500);
+insert into pasinger values (121,'ramadevi','miyyapur',20,1500);
+insert into pasinger values (122,'ganga', 'nizampet', 22,1200);
+update pasinger set pname = 'ramya' where pno = 120;
+delete from pasinger where pno = 122;
+select * from pasinger;
+
+create table ticket(ticket_id int primary key,journey_date date,age int,gender char(6),place varchar(10),arriaval_time varchar(10), dp_time varchar(10));
+insert into ticket values(120,'2021-6-25',21,'female','bachupally','7:45','6:30');
+
+select * from ticket;
+
