@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int arr[5];
+int  in=0;
+int out=0;
+int poutno;
+int pno=0;
+int r=0;
+int s=1;
+int h=0;
+int m=0;
+int i=0;
+
+int semwait(int n)
+{n--;
+if(n<0)
+{printf("\n %d is blocked",pno);
+arr[in]=pno;
+in++;
+}return n;
+}
+
+int semsignal (int n)
+{
+n++;
+if(n<=0)
+{poutno=arr[out];
+out++;
+printf("\n %d is unblocked",poutno);}
+return n;
+}
+
+int p(int q)
+{h=0;
+for(int l=0; l<q; l++)
+{pno++;
+s=semwait(s);
+if(h==0) {m=pno; h=1;}}
+while(h==1){printf("\n PROCESS %d is in its CRITICAL SESSION",m);
+printf("\n ENTER VALUE TO ADD:");
+scanf("%d",&i);
+r+=i;
+printf("\n value of R is :%d",r);
+s=semsignal(s);
+if(s==1)h=0;
+m=poutno;
+}
+
+return q;
+}
+
+int main(int argc, char** argv) {
+int q;
+printf("\nENTER NUMBER OF PROCESS:");
+scanf("%d",&q);
+q=p(q);
+printf("\n");
+return 0;
+}
+
