@@ -2,7 +2,7 @@
   private String name;
   Main() {
     System.out.println("Constructor Called:");
-    name = "HIMABINDU";
+    name = "LAXMI";
   }
 
   public static void main(String[] args) {
