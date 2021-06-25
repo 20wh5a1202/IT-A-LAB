@@ -8,7 +8,7 @@ public class MultipleCatchBlock{
                }    
                catch(ArithmeticException e)  
                   {  
-                   System.out.println("my Name is HIMA");  
+                   System.out.println("my Name is laxmi");  
                   }    
                catch(ArrayIndexOutOfBoundsException e)  
                   {  
