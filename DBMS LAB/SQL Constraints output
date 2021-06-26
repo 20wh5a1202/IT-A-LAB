@@ -1,0 +1,20 @@
+roll_num	name
+1	laxmi
+ssn	emp_name	age
+1201	keerthi	19
+1202	laxmi	17
+1203	mansvi	NULL
+1204	usha	20
+event_id	event_name	coord_id
+101	dance	1203
+102	singing	1202
+103	skit	1201
+ht_num	name
+1201	laxmi
+1202	thirupathamma
+1203	laxmi
+Tables_in_employee
+Employee
+Event
+student
+student1
