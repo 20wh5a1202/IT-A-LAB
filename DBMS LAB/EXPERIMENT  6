@@ -1,0 +1,25 @@
+create table customer(cust_id int primary key, cust_name varchar(20));
+insert into customer values(1202,'laxmi');
+insert into customer values(1205,'shobhitha');
+insert into customer values(1206,'naga laxmi');
+insert into customer values(1204,'usha sree');
+
+select * from customer;
+
+create table reservations(resid int,cust_id int,day date);
+insert into reservations values(20,1202,'2021-06-20');
+insert into reservations values(22,1205,'2021-06-21');
+insert into reservations values(23,1206,'2021-06-22');
+insert into reservations values(24,1204,'2021-06-23');
+select * from reservations;
+
+select cust_name from customer where cust_name <> ALL(select cust_name from customer);
+select cust_id from customer where cust_id IN (select cust_id from customer);
+select cust_name from customer where cust_name = some(select cust_name from customer);
+select cust_name,cust_id from customer where cust_name = any(select cust_id from reservations);
+select cust_name as CUST_NAME,cust_id from customer where cust_id in (1202,1205);
+select cust_name,cust_id from customer where cust_id not in (1202,1205);
+select * from reservations where resid between 21 and 24;
+select cust_id from customer where cust_id < 1205 union select cust_id from reservations where day ='2021-06-22';
+select * from customer;
+select * from reservations;
