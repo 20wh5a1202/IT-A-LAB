@@ -1,0 +1,44 @@
+cust_id	cust_name
+1202	  laxmi
+1205	  shobhitha
+1206	  naga laxmi
+1204	  usha sree
+resid	cust_id	  day
+20	  1202	 2021-06-20
+22	  1205	 2021-06-21
+23	  1206	 2021-06-22
+24  	1204	 2021-06-23
+cust_id
+1202
+1204
+1205
+1206
+cust_name
+laxmi
+shobhitha
+naga laxmi
+usha sree
+CUST_NAME 	cust_id
+laxmi	      1202
+shobhitha 	1205
+cust_name 	cust_id
+usha sree 	1204
+naga laxmi	1206
+resid 	cust_id	   day
+22	    1205	  2021-06-21
+23	    1206	  2021-06-22
+24	    1204	  2021-06-23
+cust_id
+1202
+1204
+1206
+cust_id	 cust_name
+1202	    laxmi
+1205	    shobhitha
+1206    	naga laxmi
+1204	    usha sree
+resid	   cust_id	   day
+20	     1202	    2021-06-20
+22	     1205	    2021-06-21
+23	     1206	    2021-06-22
+24	     1204	    2021-06-23
