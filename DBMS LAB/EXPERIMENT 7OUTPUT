@@ -1,0 +1,35 @@
+MINIMUM_CGPA
+8
+MAXIMUM_CGPA
+9.5
+AVG_CGPA
+8.916666666666666
+SUM_CGPA
+53.5
+count(*)
+6
+htnum	name	cgpa	busnum
+2	shobi	9	2
+4	ushasree	8.5	3
+5	manasvi	9	3
+6	keerthi	8	4
+htnum	name	cgpa	busnum
+1	laxmi	9.5	1
+2	shobi	9	2
+3	nagalaxmi	9.5	2
+5	manasvi	9	3
+count(*)
+2
+busnum	stud_count_bus
+1	1
+2	2
+3	2
+4	1
+busnum	numofMeritStudentsnBus
+1	1
+2	2
+3	2
+4	1
+name
+laxmi
+nagalaxmi
