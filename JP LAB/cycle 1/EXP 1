@@ -71,10 +71,10 @@ public class JavaExample {
 	Scanner scanner = new Scanner(System.in);
 
 
-	System.out.print("Enter first binary number: ");
+	System.out.println("Enter first binary number: ");
 	b1 = scanner.nextLong();
 	
-	System.out.print("Enter second binary number: ");
+	System.out.println("Enter second binary number: ");
 	b2 = scanner.nextLong();
 
 	
